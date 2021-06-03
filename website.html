@@ -1,0 +1,182 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="mystyle.css">
+	</head>
+	<script>
+		function toggleSection()
+		{
+		  document.querySelector('#section').classList.toggle('hidden');
+		}
+		function toggleImage()
+		{
+		  document.querySelector('#image').classList.toggle('hidden');
+		}
+		function toggleImage1()
+		{
+		  document.querySelector('#image1').classList.toggle('hidden');
+		}
+
+		var i = 0;
+		var images = []
+		;
+
+		images[0] = "slide1.jpg"
+		images[1] = "slide2.jpg"
+		images[2] = "slide3.jpg"
+		
+
+		function slideshow()
+		{
+			document.slide.src = images[i]
+			if (i < images.length - 1)
+			{
+				i++;
+			}
+			else
+			{
+				i = 0;
+			}
+
+
+			setTimeout("slideshow()", 2000);	
+		}
+
+		window.onload = slideshow;
+	</script>
+	
+
+	<
+
+	<body>
+
+		<div class = div1>
+			<h1>
+
+			<center>MECHANICAL KEYBOARDS SIMPLIFIED<br></center>
+			</h1>
+			<center><p class="p1">By Alex Zhang</p></center>
+
+		</div>
+
+		<center><p>
+
+			<a class = a1 name="contents">Table Of Contents:</a>
+			<br>
+			<a class = a2 href="#overview">OVERVIEW<a/><br>
+			<a class = a2 href="#structure">STRUCTURE<a/><br>
+			<a class = a2 href="#switches">SWITCHES<a/><br>
+			<a class = a2 href="#keycaps">KEYCAPS<a/><br>
+			<a class = a2 href="#layouts">LAYOUTS<a/><br>
+			<a class = a2 href="#misc">MISCELLANEOUS<a/><br>
+			
+		</p></center>
+
+
+		<a class = a1 name="overview">OVERVIEW</a>
+		<p> 
+			Mechanical keyboards are keyboards that use mechanical switches to register keypresses. This brief guide will detail their structure, parts, and various other facets of the hobby (*focusing on custom keyboards, not the common prebuilt ones) Created by Alex Zhang for the CSC500 final.	
+		</p>
+
+
+		<a class = a1 name="structure">STRUCTURE</a><br>
+
+		<p>
+			Keyboards consist of three main parts, the case, PCB, and plate. When creating a custom keyboard, you often must buy the parts individually, but companies also sell kits that contain all three of the above. However, the switches and keycaps are never included. More on those later!
+		</p>
+
+		<button onClick="toggleImage()" class="w-10 mb-10">Show/Hide</button>
+
+		<img src="parts overview.jpg" id="image" class="hidden"/>
+
+		<p>
+			The case (figure 1 + 5) is what you see on the outside, while the PCB (figure 3) contains all the electronic parts, and the plate (figure 5) provides stability for the board. The plate is placed on top of the PCB and screwed in, and then mechanical switches can be inserted in. They must be soldered to the PCB, or in the case of "hotswap" PCBS, they can be inserted/removed easily, with no soldering or desoldering required.<br><br>
+
+			Figure 2 and 4 in the image are dampening mats, and are not necessary + can be ignored - this certain kit provided them.
+		</p>
+
+
+		<a class = a1 name="switches">SWITCHES</a><br>
+		<p>
+			Switches are arguably the most important component of a mechanical keyboard. They register keypresses and transmit that information to the PCB. 
+		</p><br>
+
+		<button onClick="toggleImage1()" class="w-10 mb-10">Switch Anatomy</button>
+
+		<img src="switchdiagram.jpg" id="image1" class="hidden tallImage"/>
+		<p>
+			This is the general structure of a mechanical switch. When the stem presses down, it pushes against the spring, and after a certain amount of "travel," the stem makes contact with the leaf. The leaf has two small metal prongs extending out of the bottom housing when the switch is fully assembled, and those prongs communicate with the PCB. The two prongs are also what must be soldered to the PCB!<br><br>
+
+
+			Many different types of switches are available, each with different spring weights, materials for the housings and stem, colors, etc. However, there are three main classifications of switches: linear, tactile, and clicky switches. <br><br>
+
+
+
+			Linear switches feature a smooth travel from top to bottom. The stem "legs" are completely smooth, and therefore when they make contact with the leaf, there is no resistance.<br><br>
+
+
+			Tactile switches feature a tactile bump, which is very noticable. The stem legs feature a ridge that creates this feedback when they meet the leaf.<br><br>
+
+
+			Clicky switches are tactile switches with an extra mechanism that produces an audible click when the switch is actuated. Everyone hates these because they are extremely loud, so I won't talk about them further.
+		</p>
+
+
+		<a class = a1 name="keycaps">KEYCAPS</a><br>
+
+		<center><img name = "slide" width = 400px height = 300px></center>
+
+		<p>
+
+			Keycaps are another major factor of customizing your board. They are placed on the stem of each switch, and allow you to easily actuate the switches. They come in 2 main materials, ABS and PBT. PBT is favored for its high durability and thickness, while ABS has extremely vivid colors, but with the downside of "shining" after some use.<br><br>
+
+
+			The most renowned company that produces keycaps is the German company GMK. They produce extremely high quality ABS sets that are considered some of the best in the hobby, but they come with a hefty pricetag.
+		</p>
+
+		<a class = a1 name="layouts">LAYOUTS</a><br>
+
+		<p>
+			There are many different layouts that keyboards can come in. Here are some of the most popular:
+		</p>
+		<p>
+			40%. This keyboard layout varies from board to board, but notably lacks some of the modifiers (shift, tab, etc.) and the entire number row. Using shortcuts/macros is required to access the missing keys.
+		</p>
+		<center><img src = "40%.jpg" class = wideImage></center>
+		<p>
+			60%. This layout features the alphanumeric keys (alphas), modifiers, and the number row.
+		</p>
+		<center><img src = "60%.jpg" class = wideImage></center>
+		<p>
+			65%. This layout is the 60% but with the added arrow keys and a vertical cluster of various "function" keys on the right hand side.
+		</p>
+		<center><img src = "65%.jpg" class = wideImage></center>
+		<p>
+			TKL, or "ten-key-less." This layout has this name because it has almost all the keys - lacking only the number pad.
+		</p>
+		<center><img src = "75%.jpg" class = wideImage></center>
+		<a class = a1 name="misc">MISCELLANEOUS</a><br>
+
+
+
+
+		<button onClick="toggleSection()" class="w-10 mb-10">Show/hide image sources</button>
+
+		<center><div id = "section" class="hidden"/> 
+			<a class = a1 href="https://cdn.shopify.com/s/files/1/1679/2319/files/porticobuild-001_MDG00130_1024x1024.jpg?v=1608331926">Keyboard Parts</a><br>
+			<a class = a1 href="https://images.squarespace-cdn.com/content/v1/5e5322ca12eb83660a2207ad/1588893723601-GQPMO917BRFFGQKPBBP7/ke17ZwdGBToddI8pDm48kExuOOyO9l3qi8-eJO2tjTcUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcB59D7Ndmk3h-56WpGCWWyoNMDlwSQtF8Bsku2vu2N5769ccyOfhZLgySqeXuqqQY/tkc_tangerine-linear-switch_diagram.png?format=2500w">Switch Diagram</a><br>
+			<a class = a1 href="https://th.bing.com/th/id/OIP.O8_floOqZHXNbZseHElCyQHaFi?pid=ImgDet&rs=1">Slide 1</a><br>
+			<a class = a1 href="https://th.bing.com/th/id/R85766c7acef5d3e61ba3653c2dbaf475?rik=0SfB0FArZ4llaw&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f2772%2f6534%2fproducts%2ftop_down_1200x1200.png%3fv%3d1583116251&ehk=23RAvAc5SLI3TTZn5GuR08J80Tg7HAsXNIhq4BGc0iI%3d&risl=&pid=ImgRaw">Slide 2</a><br>
+			<a class = a1 href="https://cdn.discordapp.com/attachments/728625679779758190/798302586922991616/c87_b.png">Slide 3</a><br>
+			<a class = a1 href="https://th.bing.com/th/id/R9b5fd5429d79181d443d6be64a2de276?rik=rhHjp54%2bIEOhqA&pid=ImgRaw">40%</a><br>
+			<a class = a1 href="https://repository-images.githubusercontent.com/319693040/7e203680-4861-11eb-91e9-70801a82b5c0">60%</a><br>
+			<a class = a1 href="https://keyboardwhiz.com/wp-content/uploads/2018/10/65-Keyboard-by-kbwarriors-ig-1-1216x680.jpg">65%</a><br>
+			<a class = a1 href="https://th.bing.com/th/id/OIP.FUGf1Spl_OsiS2BV0XXMGQHaE8?pid=ImgDet&rs=1">75%</a><br>
+		</div></center>
+
+	
+
+
+	</body>
+
+</html>

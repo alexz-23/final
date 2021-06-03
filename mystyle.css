@@ -1,0 +1,123 @@
+
+body
+{
+	background-color: #F0EBD8;
+
+}
+
+h1
+{
+	font-family: "perpetua";
+	color: #748CAB;
+	font-size: 300%;
+	padding-top: 50px;
+}
+
+h2
+{
+	font-family:  "perpetua";
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+a{
+
+	font-size: 36px;
+	font-family: "perpetua";
+	color: #000000;
+}
+
+.a1
+{
+	font-size: 20px;
+	font-family: "perpetua";
+	color: #597081;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.a2
+{
+	font-size: 20px;
+	font-family: "perpetua";
+	color: #000000;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+
+p
+{
+	font-family: "perpetua";
+	font-size: 120%;
+	color: #000000;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.p2
+{
+	font-family: "perpetua";
+	font-size: 150%;
+	color: #000000;
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+
+
+div
+{
+	
+
+}
+
+.div1
+{
+	margin: 20px;
+	padding-bottom: 40px;
+	border: 15px solid #36494E;
+}
+
+.hidden
+{
+  display: none;
+}
+
+.w-10
+{
+  width: 10%;
+}
+
+.mb-10
+{
+  margin-bottom: 10px;
+}
+
+
+button
+{
+	font-family: "perpetua";
+	margin-left: 50px;
+}
+
+
+image
+{
+	padding-left: 50px;
+}
+
+.tallImage
+{
+	width: 500px;
+	height: auto;
+}
+
+.wideImage
+{
+	width: auto;
+	height: 400px;
+}
+
